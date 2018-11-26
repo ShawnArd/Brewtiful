@@ -47,6 +47,12 @@
 .text-container {
   font-size: 25px;
 }
+
 .display-text {
   background-color: #ffffff;
+
+
+.btn-primary {
+  background-color: rgb(194, 78, 0);
+
 }
