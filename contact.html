@@ -11,6 +11,7 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/Brewtiful.css" />
   </head>
   <body>
@@ -66,9 +67,14 @@
             <label for="textInput">Message</label>
             <textarea class="form-control" id="comment-input" rows="5"></textarea>
           </div>
-    <button type="submit" class="btn btn-primary" id="email-us">Submit</button>  
+          <button class="btn btn-primary float-left" id="email-us">
+            Submit
+          </button>
 </div>
-    </form>
-
+      </form>
+      
+      <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    
+    <script src="assets/javascript/contact.js"></script>
   </body>
 </html>
