@@ -47,3 +47,7 @@
 .text-container {
   font-size: 25px;
 }
+
+.btn-primary {
+  background-color: rgb(194, 78, 0);
+}
