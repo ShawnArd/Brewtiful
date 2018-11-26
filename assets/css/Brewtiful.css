@@ -1,0 +1,57 @@
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-bottom-color: #cccccc;
+    background-color: rgb(194, 78, 0);
+    
+  }
+
+
+.nav {
+
+    overflow: hidden;
+    background-color:rgb(194, 78, 0);
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 20px;
+    
+  }
+
+  #nav {
+
+    overflow: hidden;
+    background-color:rgb(194, 78, 0);
+    width: 960px;
+    margin: 0 auto;
+    color: black;
+    
+  }
+
+  #navi {
+    color:black
+  }
+  
+#name {
+   background-color: #d3a202;
+   font-weight: bold;
+   color: #ffffff;
+   padding:15px; 
+   
+}
+.page {
+    margin: 200px 0px;
+}
+  .jumbotron {
+      width: 70%;
+      margin: 0px auto;
+      background-color: #d3a202;
+      
+  }
+
+  .text-container {
+  font-size: 25px
+    }
