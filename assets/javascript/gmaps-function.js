@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+var userSearch = {
+    userLat: "",
+    userLong: "",
+    userRadius: "",
+}
+
 
 var zipCodeInSearch = "";
 var userLatitude = "";
@@ -23,11 +29,13 @@ $("#user-submit").on("click", function(){
   console.log("here") 
   $("#brewery-div").html("<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyD2my8N7YcBl2BIR3v-IYBb3dqqHazJdBQ&q=Space+Needle,Seattle+WA' width='300' height='225' frameborder='0px' margin='20px 0px' allowfullscreen></iframe>")
   console.log("here too")
+});
 
 
 // Zip Code API
 
 function getCoordinates(){
+
     var apiKey = "ST0tiPiOJyYCgPyT9KnK5exY5K9WxAdKwsrqkK6wIjRtFRo9JgJ2TxOCVxVlXZ9L";
     // test zip code
     userZipCode = 60647;
@@ -40,8 +48,16 @@ function getCoordinates(){
         method: "GET"
     }) .then(function(response) {
         console.log(response);
+        var lat = response.lat;
+        console.log(lat);
+        userSearch.push({userLat: lat});
+        
+        console.log(response.lng);
     })
+        
 };
+
+console.log(userSearch.userLat);
 
 getCoordinates();
 
@@ -71,7 +87,7 @@ function searchGooglePlaces(){
     var apiKey = "AIzaSyD6yca5MoRM4toQNPJXqs4nnvQEs-mMoeM";
     var geocoordinates = "41.923122,-87.709290";
     var userRadius = "4023";
-    var queryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + geocoordinates + "&radius=" + userRadius + "&type=brewery&key=" + apiKey;
+    var queryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + geocoordinates + "&radius=" + userRadius + "&keyword=brewery&key=" + apiKey;
 
     $.ajax({
         url: queryURL,
@@ -82,7 +98,9 @@ function searchGooglePlaces(){
 };
 searchGooglePlaces();
 
-https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name,rating,formatted_phone_number&key=YOUR_API_KEY
+});
+
+// https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name,rating,formatted_phone_number&key=YOUR_API_KEY
 
 
 // yelp API -- business details
@@ -103,20 +121,20 @@ https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsR
 
 
 
-function writeResultWindow(){
-    $("#main-div").append("<div id=topics-div></div>");
-}
+// function writeResultWindow(){
+//     $("#main-div").append("<div id=topics-div></div>");
+// }
 
-function writeResultRow(){
-    // function to define table results;
-    function populateMap(){
+// function writeResultRow(){
+//     // function to define table results;
+//     function populateMap(){
 
-    };
-}
+//     };
+// }
 
-function runSearch(){
+// function runSearch(){
 
-}
+// }
 
 
 
@@ -136,4 +154,3 @@ function runSearch(){
 
 
 // this is the closer for document.ready --
-});
