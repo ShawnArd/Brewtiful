@@ -1,49 +1,96 @@
+body {
+  background-image: url(../images/beervector2.jpg);
+  /* color: rgb(255, 255, 255); */
+  content: center;
+}  
+
+.mytext {
+  color: white;
+}
+
 .header {
   position: fixed;
+  height: 74px;
   top: 0px;
   left: 0px;
   width: 100%;
   border-style: solid;
-  border-width: 0px 0px 2px 0px;
-  border-bottom-color: #cccccc;
-  background-color: rgb(194, 78, 0);
+  background-color:#000000;
 }
-
+.my-nav {
+  height: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color:#000000;
+ }
 .nav {
   overflow: hidden;
-  background-color: rgb(194, 78, 0);
-  width: 960px;
+  background-color:#000000;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 20px;
+  font-family: 'Oswald', sans-serif;
 }
-
 #nav {
   overflow: hidden;
-  background-color: rgb(194, 78, 0);
-  width: 960px;
+  background-color:#000000;
+  height: 70px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
   margin: 0 auto;
-  color: black;
-}
+  font-family: 'Oswald', sans-serif;
+} 
 
 #navi {
-  color: black;
+  color: white;
+  font-family: 'Oswald', sans-serif;
 }
 
 #name {
-  background-color: #d3a202;
-  font-weight: bold;
-  color: #ffffff;
-  padding: 15px;
+  padding: 10px;
+  font-family: 'Lily Script One', cursive;
+  text-shadow: 4px 4px 4px rgb(222,184,135);
 }
+
+.display-4 { 
+  color:white;
+  font-size: 50px;
+  /* float: right; */
+  /* transform: rotate(-7deg); */
+
+}
+.display-5 { 
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
 .page {
   margin: 200px 0px;
+  color:#ffffff;
 }
 .jumbotron {
   width: 70%;
   margin: 0px auto;
-  background-color: #d3a202;
+  background-color:#000000;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 50px;
+  /* margin-bottom: 0px;   */
 }
 
 .text-container {
   font-size: 25px;
+}
+
+.display-text {
+  background-color: white;
+}
+
+.btn-primary {
+  background-color: #e60012;
+}
+.dropdownMenuButton {
+  background-color: #e60012;
 }
