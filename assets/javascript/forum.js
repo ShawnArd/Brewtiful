@@ -43,6 +43,7 @@ database.ref().on("child_added", function (childSnapshot) {
 
     var timeCreated = moment(time).format('MMMM Do YYYY, h:mm:ss a');
 
+
     $("#chat-display").append("<div class ='display-text'><p>" + userNameDisp + ":  " + newInput + "<br>" + timeCreated + "</p></div>");
 
 })
@@ -51,5 +52,5 @@ database.ref().on("child_added", function (childSnapshot) {
 // push the user input to firebases
 // get the information from firebase and display it on dom //
 // need to get api//
-//assign for user/
 
+//assign for user/
