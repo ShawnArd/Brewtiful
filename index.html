@@ -51,7 +51,7 @@
                     <div class="form-row align-items-center">
                             
                               <label class="sr-only" for="inlineFormInput">location</label>
-                              <input type="text" class="form-control mb-2" id="location-input" placeholder="Enter you ZipCode for breweries near you!">
+                              <input type="text" class="form-control mb-2" id="user-zip-code" placeholder="Enter you ZipCode for breweries near you!">
                             </div>
                         </div>
                         <div class="col-md-2">
@@ -76,12 +76,21 @@
               </div>
             </div>
           </form>
-          <div id="brewery-div"></div>
+          <div class="row">
+          <div class="col-md-8">
+              <div id="brewery-table"></div>
+          </div>
+          <div class="col-md-2">
+              <div id="brewery-div"></div>
+            </div>
+          
+          
           
       </div>
     </div>
 
-    <script src="assets/javascript/gmaps-function.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/gmaps-function.js"></script>
 </body>
 </html>
