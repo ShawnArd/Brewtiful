@@ -16,18 +16,22 @@ $("#chatBtn").on("click", function (e) {
         .val()
         .trim();
     var userNameInput = $("#user-name").val().trim();
-    var newChat = {
-        name: userNameInput,
-        input: userChat,
-        dateCreated: firebase.database.ServerValue.TIMESTAMP
-    };
 
-    database.ref().push(newChat);
-    $("#user-name").val("");
-    $("#user-input").val("");
-    $("#time-show").val("");
+    if (userNameInput) {
+        var newChat = {
+            name: userNameInput,
+            input: userChat,
+            dateCreated: firebase.database.ServerValue.TIMESTAMP
+        };
+        database.ref().push(newChat);
+        $("#user-name").val("");
+        $("#user-input").val("");
+        $("#time-show").val("");
+    }
+    else {
 
-
+        $("#validation").text("Please provide your name");
+    }
 
 });
 
