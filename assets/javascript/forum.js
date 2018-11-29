@@ -44,7 +44,7 @@ database.ref().on("child_added", function (childSnapshot) {
     var timeCreated = moment(time).format('MMMM Do YYYY, h:mm:ss a');
 
 
-    $("#chat-display").append("<div class ='display-text'><p>" + userNameDisp + ":  " + newInput + "<br>" + timeCreated + "</p></div>");
+    $("#chat-display").prepend("<div class ='display-text'><p>" + userNameDisp + ":  " + newInput + "<br>" + timeCreated + "</p></div>");
 
 })
 
