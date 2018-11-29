@@ -17,7 +17,7 @@ var userRadius = "";
 console.log(zipCodeInSearch);
 
 $("#user-submit").on("click", function() {
-    console.log("here")
+    
     var userZipCode = $("#user-zip-code").val().trim();
     zipCodeInSearch = userZipCode;
     // runSearch();
@@ -107,13 +107,13 @@ function searchGooglePlaces(lat, lng){
         console.log(response.results[0].name, response.results[0].rating)
         var results = response.results;
 
-      for (var i = 0; i < results.length; i++) {
+      for (var i = 0; i <=5 ; i++) {
 
         // Creating and storing a div tag and adding a class so you can float the gifs
         var brewDiv = $("<div class='brew-div'>");
 
       
-        var p = $("<p>").text(results[i].name+ ", Rating: " + results[i].rating);
+        var p = $("<p>").text(results[i].name+ ", Rating: " + results[i].rating+ ", Address: "+results[i].vicinity);
 
         brewDiv.append(p);
         
