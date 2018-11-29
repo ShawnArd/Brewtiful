@@ -94,3 +94,16 @@ body {
 .dropdownMenuButton {
   background-color: #e60012;
 }
+
+.brew-div {
+  background-color: #ffffff;
+  margin:5px 0px;
+  border-radius:3px;
+  padding: 1px;
+}
+.beer-div {
+  background-color: #ffffff;
+  margin:5px 0px;
+  border-radius:3px;
+  padding: 1px;
+}

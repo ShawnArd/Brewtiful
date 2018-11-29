@@ -63,24 +63,24 @@
              
               <div class="col-md-5">
                 <div class="input-group">
-                    <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                    <select class="custom-select" id="beer-select" aria-label="Example select with button addon">
                       <option selected>Choose your style of beer!</option>
-                      <option value="ipa">IPA</option>
-                      <option value="lager">Lager</option>
-                      <option value="stout">Stout</option>
-                      <option value="tripel">Tripel</option>
-                      <option value="pilsner">Pilsner</option>
-                      <option value="wheat">Wheat</option>
+                      <option value="IPA">IPA</option>
+                      <!-- <option value="Lager">Lager</option> -->
+                      <option value="Stout">Stout</option>
+                      <!-- <option value="Ale">Ale</option> -->
+                      <option value="Pilsener">Pilsener</option>
+                      
                     </select>
                     <div class="input-group-append">
-                      <button class="btn btn-outline-secondary btn-warning" type="button">Search</button>
+                      <button class="btn btn-outline-secondary btn-warning" id="user-select" type="button">Search</button>
                     </div>
                   </div>
               </div>
             </div>
           </form>
           <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-6">
               <div id="brewery-table"></div>
           </div>
           <div class="col-md-2">
@@ -88,8 +88,14 @@
             </div>
           
           </div>
+          <div class="row">
+            <div class="col-md-8">
+              <div id="beer-table"></div>
+            </div>
+          </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="assets/javascript/gmaps-function.js"></script>
+    <script src="assets/javascript/beer-function.js"></script>
 </body>
 </html>
