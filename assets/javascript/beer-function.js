@@ -8,7 +8,7 @@ $(document).ready(function () {
     
         function ajax(choice) {
             var apiKeySand = "309601320ed870dade2bcc0dae4e05e5"
-            for(let i=1; i<=5; i++) {
+            for(let i=1; i<=10; i++) {
             var queryURL = "https://cors-anywhere.herokuapp.com/https://api.brewerydb.com/v2/beers/?key=" + apiKeySand+"&p="+i;
           
             $.ajax({

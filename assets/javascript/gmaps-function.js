@@ -1,20 +1,6 @@
 $(document).ready(function () {
 
-var userSearch = {
-    userLat: "",
-    userLong: "",
-    userRadius: "",
-}
-
-
 var zipCodeInSearch = "";
-var userLatitude = "";
-var userLongitude = "";
-var geocoordinates = userLatitude + "," + userLongitude;
-// var radiusOptions is meters equivalent to a .5 mile, 2.5 mile, 5 mile, and 12.5 mile search radius. The API url uses a radius in meters to determine nearby results. we will need to set up a dropdown menu
-var radiusOptions = [805, 4023, 8047, 20117];
-var userRadius = "";
-console.log(zipCodeInSearch);
 
 $("#user-submit").on("click", function() {
     
@@ -26,15 +12,6 @@ $("#user-submit").on("click", function() {
 
     // return zipCodeInSearch;
 });
-
-var geocoordinates = "&latitude=" + userLatitude + "&longitude=" + userLongitude;
-// console.log("maybe?")
-// $("#user-submit").on("click", function(){
-//   console.log("here") 
-//   $("#brewery-div").html("<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyD2my8N7YcBl2BIR3v-IYBb3dqqHazJdBQ&q=Space+Needle,Seattle+WA' width='300' height='225' frameborder='0px' margin='20px 0px' allowfullscreen></iframe>")
-//   console.log("here too")
-// });
-
 
 // Zip Code API
 
@@ -111,76 +88,16 @@ function searchGooglePlaces(lat, lng){
 
         // Creating and storing a div tag and adding a class so you can float the gifs
         var brewDiv = $("<div class='brew-div'>");
-
       
         var p = $("<p>").text(results[i].name+ ", Rating: " + results[i].rating+ ", Address: "+results[i].vicinity);
 
         brewDiv.append(p);
         
-
-        
         $("#brewery-table").prepend(brewDiv);
       }
 
-
-
     });
 };
-// searchGooglePlaces();
 
-});
-
-// https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name,rating,formatted_phone_number&key=YOUR_API_KEY
-
-
-// yelp API -- business details
-
-// function searchYelp(){
-//     var apiKey = "Bearer d50zgYw61ZmLxU3P-4KvCsEwiZJoFzSoESlCbNgng1JneMept890xwg89N4rNrwy3pYLRz2Crx_aVBBUod5d80YjI9yS8TePRCkhnJNsld5HTLS4DLqx5-PTjDT8W3Yx";
-//     var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search";
-
-//     $.ajax({
-//         url: queryURL,
-//         method: "GET",
-//         Authorization: apiKey,
-//     }) .then(function(response) {
-//         console.log(response);
-//     })
-// };
-// searchYelp();
-
-
-
-// function writeResultWindow(){
-//     $("#main-div").append("<div id=topics-div></div>");
-// }
-
-// function writeResultRow(){
-//     // function to define table results;
-//     function populateMap(){
-
-//     };
-// }
-
-// function runSearch(){
-
-// }
-
-
-
-
-
-// $("#user-submit").on("click", function(){
-//     $("#brewery-div").html("<iframe
-//     width="300"
-//     height="225"
-//     frameborder="0" style="border:0"
-//     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2my8N7YcBl2BIR3v-IYBb3dqqHazJdBQ&q=Space+Needle,Seattle+WA" allowfullscreen>
-//   </iframe>"
-
- 
-
-// })
-
-
-// this is the closer for document.ready --
+//
+}); //document ready closer
