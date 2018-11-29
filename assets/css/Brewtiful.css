@@ -46,20 +46,34 @@ body {
   color: white;
   font-family: 'Oswald', sans-serif;
 }
+#navi:hover {
+  color: lightgoldenrodyellow;
+}
 
 #name {
   padding: 10px;
   font-family: 'Lily Script One', cursive;
   text-shadow: 4px 4px 4px rgb(222,184,135);
+  
 }
 
 .display-4 { 
   color:white;
   font-size: 50px;
-  /* float: right; */
-  /* transform: rotate(-7deg); */
-
+margin-left: 170px;
+/* -webkit-animation: glow 1s ease-in-out infinite alternate; */
+/* -moz-animation: glow 1s ease-in-out infinite alternate; */
+/* animation: glow 1s ease-in-out infinite alternate; */
 }
+/* @-webkit-keyframes glow{
+from { 
+  text-shadow: 0 0 80px #ffffffe0, 0 0 20px purple, 0 0 40px purple, 0 0 70px purple, 0 0 90px purple;
+}
+to {
+  text-shadow: 0 0 60px hotpink, 0 0 30px hotpink, 0 0 50px hotpink, 0 0 40px hotpink, 0 0 70px hotpink, 0 0 80px hotpink, 0 0 90px hotpink;
+}
+} */
+
 .display-5 { 
   color: white;
   font-size: 40px;
@@ -107,3 +121,36 @@ body {
   border-radius:3px;
   padding: 1px;
 }
+/*contact.html*/
+
+.heading {
+  margin-left: 250px;
+  color:white;
+  font-size: 70px;
+/* -webkit-animation: glow 1s ease-in-out infinite alternate; */
+/* -moz-animation: glow 1s ease-in-out infinite alternate; */
+/* animation: glow 1s ease-in-out infinite alternate; */
+}
+/* @-webkit-keyframes glow{
+from { 
+  text-shadow: 0 0 80px #ffffffe0, 0 0 20px purple, 0 0 40px purple, 0 0 70px purple, 0 0 90px purple;
+}
+to {
+  text-shadow: 0 0 60px hotpink, 0 0 30px hotpink, 0 0 50px hotpink, 0 0 40px hotpink, 0 0 70px hotpink, 0 0 80px hotpink, 0 0 90px hotpink;
+}
+} */
+h3,
+label { 
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+
+}
+
+#firstNameValidation,
+#lastNameValidation, 
+#phoneValidation, 
+#emailValidation, 
+#messageValidation {
+  color: red;
+} 
