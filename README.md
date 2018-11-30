@@ -25,6 +25,8 @@ Eskindir Tsege
   
    ![Screenshot](https://shawnard.github.io/Brewtiful/assets/images/contactscrn.png)
 
+   ![Screenshot](https://shawnard.github.io/Brewtiful/assets/images/mobile.png)
+
 
 
 
