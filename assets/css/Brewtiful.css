@@ -113,7 +113,8 @@ text-shadow: 4px 4px 4px rgb(222,184,135)
 
 #user-submit,
 #user-select {
-  background-color: #e60012;
+  background-color:  #dc3545;
+  color: #ffffff;
 }
 /* .dropdownMenuButton {
   background: #e60012;
@@ -170,7 +171,7 @@ label {
 } 
 footer { 
   position: fixed;
-  height: 30px;
+  height: 25px;
   bottom:  0px;
   left: 0px;
   width: 100%;
