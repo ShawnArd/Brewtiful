@@ -1,3 +1,4 @@
+
 #Brewtiful
 by Shawn Ard, Zhamal Nurdin Kyzy, Dan Staggs, Eskinder Tsekege, Joseph Adam
  Brewtiful is our first project. It utilizes multiple API's to help users find their closest Breweries and New Beers to try!
@@ -9,3 +10,7 @@ It features an index page where users can enter a zip code to genereate a list o
   ![Screenshot](https://shawnard.github.io/Brewtiful/assets/images/About.png)
   
    ![Screenshot](https://shawnard.github.io/Brewtiful/assets/images/contactscrn.png)
+
+
+
+
