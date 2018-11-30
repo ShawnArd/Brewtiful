@@ -60,25 +60,34 @@ body {
 .display-4 { 
   color:white;
   font-size: 50px;
-margin-left: 170px;
-/* -webkit-animation: glow 1s ease-in-out infinite alternate; */
-/* -moz-animation: glow 1s ease-in-out infinite alternate; */
-/* animation: glow 1s ease-in-out infinite alternate; */
+
+/* -webkit-animation: glow 1s ease-in-out infinite alternate; 
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 1s ease-in-out infinite alternate;
 }
-/* @-webkit-keyframes glow{
+@-webkit-keyframes glow{
 from { 
   text-shadow: 0 0 80px #ffffffe0, 0 0 20px purple, 0 0 40px purple, 0 0 70px purple, 0 0 90px purple;
 }
 to {
   text-shadow: 0 0 60px hotpink, 0 0 30px hotpink, 0 0 50px hotpink, 0 0 40px hotpink, 0 0 70px hotpink, 0 0 80px hotpink, 0 0 90px hotpink;
-}
 } */
-
+}
 .display-5 { 
   color: white;
   font-size: 40px;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Lily Script One', cursive;
+  text-shadow: 4px 4px 4px rgb(222,184,135)
+}
+
+.display-6 { 
+  color:white;
+  font-size: 50px;
+text-align: center;
+font-family: 'Lily Script One', cursive;
+text-shadow: 4px 4px 4px rgb(222,184,135)
 }
 
 .page {
@@ -102,12 +111,14 @@ to {
   background-color: white;
 }
 
-.btn-primary {
+#user-submit,
+#user-select {
   background-color: #e60012;
 }
-.dropdownMenuButton {
-  background-color: #e60012;
-}
+/* .dropdownMenuButton {
+  background: #e60012;
+  
+} */
 
 .brew-div {
   background-color: #ffffff;
@@ -124,21 +135,24 @@ to {
 /*contact.html*/
 
 .heading {
-  margin-left: 250px;
+  text-align: center;
   color:white;
   font-size: 70px;
-/* -webkit-animation: glow 1s ease-in-out infinite alternate; */
-/* -moz-animation: glow 1s ease-in-out infinite alternate; */
-/* animation: glow 1s ease-in-out infinite alternate; */
+  font-family: 'Lily Script One', cursive;
+  text-shadow: 4px 4px 4px rgb(222,184,135);
+/* -webkit-animation: glow 1s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 1s ease-in-out infinite alternate; 
 }
-/* @-webkit-keyframes glow{
+@-webkit-keyframes glow{
 from { 
   text-shadow: 0 0 80px #ffffffe0, 0 0 20px purple, 0 0 40px purple, 0 0 70px purple, 0 0 90px purple;
 }
 to {
   text-shadow: 0 0 60px hotpink, 0 0 30px hotpink, 0 0 50px hotpink, 0 0 40px hotpink, 0 0 70px hotpink, 0 0 80px hotpink, 0 0 90px hotpink;
-}
 } */
+}
+
 h3,
 label { 
   font-family: 'Oswald', sans-serif;
@@ -154,3 +168,17 @@ label {
 #messageValidation {
   color: red;
 } 
+footer { 
+  position: fixed;
+  height: 30px;
+  bottom:  0px;
+  left: 0px;
+  width: 100%;
+  border-style: solid;
+  background-color:#000000;
+  opacity: 0.2;
+}
+.container-footer {
+  color: #ffffff;
+  text-align: center;
+}
