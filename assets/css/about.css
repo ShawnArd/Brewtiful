@@ -139,5 +139,12 @@
               order: 2;
     }
   }
+ .middle {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Lily Script One', cursive;
+    text-shadow: 4px 4px 4px rgb(222,184,135);
+  }
+  
   
   
