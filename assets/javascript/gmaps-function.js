@@ -17,7 +17,8 @@ $("#user-submit").on("click", function() {
 
 function getCoordinates(zipCode){
 console.log(zipCode)
-    var apiKey = "ST0tiPiOJyYCgPyT9KnK5exY5K9WxAdKwsrqkK6wIjRtFRo9JgJ2TxOCVxVlXZ9L";
+    var apiKey = 'ST0tiPiOJyYCgPyT9KnK5exY5K9WxAdKwsrqkK6wIjRtFRo9JgJ2TxOCVxVlXZ9L';
+    // console.log(process.env)
     // test zip code
     userZipCode = zipCode
     
@@ -71,7 +72,7 @@ function embedMaps(lat, lng){
 
 function searchGooglePlaces(lat, lng){
     console.log('Search in')
-    var apiKey = "AIzaSyD6yca5MoRM4toQNPJXqs4nnvQEs-mMoeM";
+    var apiKey = "AIzaSyDKJCcjoCqjxsghZXE9KPC8zS_ia6Jl8DQ";
     var geocoordinates = lat+","+lng;
     var userRadius = "2000";
     var queryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + geocoordinates + "&radius=" + userRadius + "&keyword=brewery&key=" + apiKey +"&limit=5";
