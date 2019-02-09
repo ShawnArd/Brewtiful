@@ -5,17 +5,19 @@ var zipCodeInSearch = "";
 $("#user-submit").on("click", function() {
     
     var userZipCode = $("#user-zip-code").val().trim();
+    var userRadius = $("#distance-select").val().trim();
+    // console.log(searchRadius, typeof searchRadius)
     zipCodeInSearch = userZipCode;
     // runSearch();
     console.log(zipCodeInSearch+"in")
-    getCoordinates(zipCodeInSearch)
+    getCoordinates(zipCodeInSearch, userRadius)
 
     // return zipCodeInSearch;
 });
 
 // Zip Code API
 
-function getCoordinates(zipCode){
+function getCoordinates(zipCode, userRadius){
 console.log(zipCode)
     var apiKey = 'ST0tiPiOJyYCgPyT9KnK5exY5K9WxAdKwsrqkK6wIjRtFRo9JgJ2TxOCVxVlXZ9L';
     // console.log(process.env)
@@ -36,7 +38,7 @@ console.log(zipCode)
         // // userSearch.push({userLat: lat});
         
         // console.log(response.lng);
-        searchGooglePlaces(lat, lng)
+        searchGooglePlaces(lat, lng, userRadius)
         // embedMaps(lat, lng)
     })
     
@@ -55,7 +57,7 @@ function embedMaps(lat, lng){
 
     // test geocoordinates for Logan Square, test radius for 5 miles
     var geocoordinates = lat+","+lng;
-    var userRadius = "2000";
+    
 
     // this URL is for 'google places' instead of 'google map embeds'. fix it.
     var queryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + geocoordinates + "&radius=" + userRadius + "&type=brewery&key=" + apiKey;
@@ -70,11 +72,11 @@ function embedMaps(lat, lng){
     // https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=1500&type=restaurant&keyword=cruise&key=YOUR_API_KEY
 };
 
-function searchGooglePlaces(lat, lng){
-    console.log('Search in')
+function searchGooglePlaces(lat, lng, userRadius){
+    console.log('User Radius', userRadius)
     var apiKey = "AIzaSyDKJCcjoCqjxsghZXE9KPC8zS_ia6Jl8DQ";
     var geocoordinates = lat+","+lng;
-    var userRadius = "2000";
+    
     var queryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + geocoordinates + "&radius=" + userRadius + "&keyword=brewery&key=" + apiKey +"&limit=5";
 
     $.ajax({

@@ -61,7 +61,9 @@
 
     <form>
       <div class="row">
-        <div class="col-md-4">
+          <div class="col-md-3">
+          </div>
+        <div class="col-md-3">
           <div class="form-row align-items-center">
 
             <label class="sr-only" for="inlineFormInput">location</label>
@@ -69,24 +71,32 @@
           </div>
         </div>
         <div class="col-md-2">
+          <div class="input-group">
+            <select class="custom-select" id="distance-select" aria-label="Example select with button addon">
+              <option selected>Distance (km)</option>
+              <option value=1000>1 km</option>
+              <option value=3000>3 km</option>
+              <option value=5000>5 km</option>
+              <option value=10000>10 km</option>
+            </select>
+            </div>
+          </div>
+        <div class="col-md-2">
           <button type="button" class="btn btn-danger mb-2" id="user-submit">Search</button>
         </div>
 
-        <div class="col-md-5">
+        <!-- <div class="col-md-5">
           <div class="input-group">
             <select class="custom-select" id="beer-select" aria-label="Example select with button addon">
               <option selected>Choose your style of beer!</option>
               <option value="IPA">IPA</option>
               <option value="Pilsener">Pilsener</option>
-              <!-- <option value="Lager">Lager</option> -->
-              <option value="Stout">Stout</option>
-              <!-- <option value="Ale">Ale</option> -->
             </select>
             <div class="input-group-append">
               <button class="btn btn-outline-secondary btn-warning" id="user-select" type="button">Search</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </form>
     <div class="row">
